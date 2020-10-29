@@ -1,13 +1,11 @@
 import React from 'react';
-// import foods from './foods.json';
 
 class FoodBox extends React.Component {
 
-    //functions
+   
 
     render() {
         return (
-            // {this.state.foods.map(food => 
                 <div className="box">
                     <article className="media">
                         <div className="media-left">
@@ -19,7 +17,7 @@ class FoodBox extends React.Component {
                         <div className="content">
                             <p>
                             <strong>{this.props.name}</strong> <br />
-                            <small>{this.props.calories}</small>
+                            <small>{this.props.calories} cal</small>
                             </p>
                         </div>
                         </div>
@@ -37,7 +35,6 @@ class FoodBox extends React.Component {
                         </div>
                     </article>
                 </div>
-            // )}
         )
     }
 
